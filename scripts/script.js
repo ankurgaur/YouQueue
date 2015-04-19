@@ -16,7 +16,7 @@ $(document.body).on('mouseover', function(event) {
     if ($(event.target).hasClass("content-wrapper")) {
         var selectedTag = 'selected';
         $('.'+selectedTag).removeClass(selectedTag).css('box-shadow', 'none');
-        var $target = $(event.target).css('box-shadow', '0 0 0 4px rgba(255,100,0,.5)'); 
-        $target.addClass(selectedTag); 
+        var $target = $(event.target).css('box-shadow', '0 0 0 4px rgba(255,100,0,.5)');
+        $target.addClass(selectedTag);
     }
 });

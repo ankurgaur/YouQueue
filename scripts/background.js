@@ -1,7 +1,7 @@
 function getword(info,tab) {
 
     console.log(info.linkUrl);
-    chrome.tabs.create({ 
+    chrome.tabs.create({
 
         url: info.linkUrl,
     })
@@ -11,8 +11,8 @@ function getword(info,tab) {
 
 chrome.contextMenus.create({
 
-    title: "Add to Playlist", 
-    contexts:["link"], 
+    title: "Add to Playlist",
+    contexts:["link"],
     onclick: getword,
 
 });
